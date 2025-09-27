@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FitVerse - BMI CALCULATOR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bmi.css" />
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <img src="../img/logo.png" alt="website-logo" height="90px" />
+            <h2 class="logo">BMI</h2>
+            <div class="toggle-icon">
+                <div class="social-icon">
+                    <a href="https://github.com/manik-18" target="_blank">
+                        <i class="fa-brands fa-github-square"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/manik1810/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                &nbsp;&nbsp;&nbsp;
+                <label for="menuBTN" id="toggleBTN"><i class="fa-solid fa-bars-stagge#e74c3c">&#9776;</i></label>
+            </div>
+        </div>
+        <input type="checkbox" id="menuBTN" />
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="index.html#service-sec">
+                    <li>Services</li>
+                </a>
+                <a href="index.html#gallery-sec">
+                    <li>Gallery</li>
+                </a>
+                <li class="dropdown">
+                    <a href="#">Exercises <span>&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="allExercises.html">All Exercises</a></li>
+                        <li><a href="bodyPart.html">Search by Body Part</a></li>
+                        <li><a href="targetMuscle.html">Search by Target Muscle</a></li>
+                    </ul>
+                </li>
+                <a href="#">
+                    <li>BMI Calculator</li>
+                </a>
+                <a href="index.html#contact-sec">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>BMI Calculator</h1>
+            <form>
+                <br />
+                <p>
+                    <label><b>Height in CM: </b></label><input type="text" id="height" placeholder="your height" />
+                </p>
+                <br />
+                <br />
+                <p>
+                    <label><b>Weight in KG: </b></label><input type="text" id="weight" placeholder="your weight" />
+                </p>
+                <button>Calculate</button>
+                <div id="results"></div>
+                <div id="weight-guide">
+                    <h3>BMI Weight Guide</h3>
+                    <p>Under Weight = Less than 18.6</p>
+                    <p>Normal Range = 18.6 and 24.9</p>
+                    <p>Overweight = Greater than 24.9</p>
+                </div>
+            </form>
+        </div>
+    </header>
+    <br /><br /><br /><br /><br />
+    <footer>
+        <h4>&copy; <span>FITVERSE</span> - all Rights reserved</h4>
+    </footer>
+</body>
+<script src="../js/bmi.js"></script>
+
+</html>

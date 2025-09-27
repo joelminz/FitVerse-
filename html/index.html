@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>FitVerse</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<script>
+		(function (w, d) {
+			w.CollectId = "6437da7165918a6a208019d2";
+			var h = d.head || d.getElementsByTagName("head")[0];
+			var s = d.createElement("script");
+			s.setAttribute("type", "text/javascript");
+			s.async = true;
+			s.setAttribute("src", "https://collectcdn.com/launcher.js");
+			h.appendChild(s);
+		})(window, document);
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="topbar">
+			<img src="../img/logo.png" alt="website-logo" height="90px" />
+			<h2 class="logo">FITVERSE</h2>
+			<div class="toggle-icon">
+				<div class="social-icon">
+					<a href="https://github.com/joelminz" target="_blank">
+						<i class="fa-brands fa-github-square"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/joelminz09/" target="_blank">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+				</div>
+				&nbsp;&nbsp;&nbsp;
+				<label for="menuBTN" id="toggleBTN"><i class="fa-solid fa-bars-stagge#e74c3c">&#9776;</i></label>
+			</div>
+		</div>
+		<input type="checkbox" id="menuBTN" />
+		<nav>
+			<ul>
+				<a href="#">
+					<li>Home</li>
+				</a>
+				<a href="#service-sec">
+					<li>Services</li>
+				</a>
+				<a href="#gallery-sec">
+					<li>Gallery</li>
+				</a>
+				<li class="dropdown">
+					<a href="#">Exercises <span>&#9662;</span></a>
+					<ul class="dropdown-menu">
+						<li><a href="allExercises.html">All Exercises</a></li>
+						<li><a href="bodyPart.html">Search by Body Part</a></li>
+						<li><a href="targetMuscle.html">Search by Target Muscle</a></li>
+						<li><a href="underWeight.html">Exercises For Under Weight</a></li>
+					
+
+					</ul>
+				</li>
+				<a href="bmi.html">
+					<li>BMI Calculator</li>
+				</a>
+				<a href="#contact-sec">
+					<li>Contact</li>
+				</a>
+			</ul>
+		</nav>
+		<div class="banner">
+			<div class="intro">
+				<h1>THE BODY ACHIEVES</h1>
+				<h1>WHAT THE</h1>
+				<h1>MIND BELIEVES</h1>
+				<form>
+					<a href="#contact-sec" class="btn bg-primary">CONTACT US</a>
+				</form>
+			</div>
+			<img src="../img/bg.png" />
+		</div>
+	</header>
+	<section id="service-sec" class="service-sec">
+		<center>
+			<h2 class="sec-title">OUR SERVICES</h2>
+		</center>
+		<center>
+			<p>Transform Your Life with Our Comprehensive Range of Services.</p>
+		</center>
+		<div class="row">
+			<div class="card" style="background: #fdcb6e">
+				<i class="fa-solid fa-person-running"></i>
+				<h4>Always Healthy</h4>
+			</div>
+			<div class="card" style="background: var(--primary-color)">
+				<i class="fa-solid fa-graduation-cap"></i>
+				<h4>Best Training</h4>
+			</div>
+			<div class="card" style="background: #00b894">
+				<i class="fa-solid fa-calculator"></i>
+				<h4>BMI Calculator</h4>
+			</div>
+			<div class="card" style="background: #c47b8d">
+				<i class="fa-solid fa-headset"></i>
+				<h4>24x7 Support</h4>
+			</div>
+		</div>
+	</section>
+	<section class="about-sec">
+		<div class="intro">
+			<h1>ABOUT <span>US</span></h1>
+			<p>
+				Our fitness website includes a wide range of exercises that target
+				specific muscles, allowing you to create a customized workout plan
+				based on your goals. Whether you want to build muscle, tone your abs,
+				or strengthen your legs, we have exercises that will help you achieve
+				your desire results. In addition, our BMI calculator is a useful tool
+				to help you track your progress and make adjustments to your nutrition
+				and workout plan. Our team is always available to help you with any
+				questions or feedback you may have, and we're committed to providing
+				you with the best possible experience on our website. Choose us as
+				your partner in achieving your fitness goals, and thank you for
+				visiting our fitness website.
+			</p>
+		</div>
+		<img src="../img/bg.gif" />
+	</section>
+	<section class="gallery-sec" id="gallery-sec">
+		<div class="card">
+			<h3>Our Gallery</h3>
+			<p>
+				Whether you're a beginner or a seasoned athlete, our site has
+				something for everyone. Join our community and start your journey to a
+				healthier, happier you today!
+			</p>
+			<img src="../img/bodybuilder.png" />
+		</div>
+		<div class="card">
+			<div class="card-img">
+				<img src="../img/1.jpg" />
+			</div>
+			<div class="card-img">
+				<img src="../img/5.jpg" />
+			</div>
+			<div class="card-img">
+				<img src="../img/3.jpg" />
+			</div>
+			<div class="card-img">
+				<img src="../img/4.jpg" />
+			</div>
+		</div>
+	</section>
+	<section class="contact-sec" id="contact-sec">
+		<div>
+			<h1>CONTACT US</h1>
+			<p>Got a technical issue? Want to send A feedback ? Let us know.</p>
+		</div>
+		<form id="my-form" action="https://formspree.io/f/xzzpdwpb" method="POST">
+			<input type="text" name="name" placeholder="Your Name" />
+			<input type="text" name="contact" placeholder="Your Contact" />
+			<input type="email" name="email" placeholder="Email Address" />
+			<textarea id="message" name="textarea" placeholder="Type Your Message..."></textarea>
+			<button type="submit" class="btn bg-primary">Submit</button>
+		</form>
+	</section>
+	<br /><br /><br /><br /><br />
+	<footer>
+		<h4>&copy; <span>FITVERSE</span> - all Rights reserved</h4>
+	</footer>
+</body>
+<script type="module" src="../js/validation.js"></script>
+
+</html>

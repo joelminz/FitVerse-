@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FitVerse - BODY PART</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/exercises.css" />
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <img src="../img/logo.png" alt="website-logo" height="90px" />
+            <h2 class="logo">EXERCISES</h2>
+            <div class="toggle-icon">
+                <div class="social-icon">
+                    <a href="https://github.com/manik-18" target="_blank">
+                        <i class="fa-brands fa-github-square"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/manik1810/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                &nbsp;&nbsp;&nbsp;
+                <label for="menuBTN" id="toggleBTN"><i class="fa-solid fa-bars-stagge#e74c3c">&#9776;</i></label>
+            </div>
+        </div>
+        <input type="checkbox" id="menuBTN" />
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="index.html#service-sec">
+                    <li>Services</li>
+                </a>
+                <a href="index.html#gallery-sec">
+                    <li>Gallery</li>
+                </a>
+                <li class="dropdown">
+                    <a href="#">Exercises <span>&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="allExercises.html">All Exercises</a></li>
+                        <li><a href="#">Search by Body Part</a></li>
+                        <li><a href="targetMuscle.html">Search by Target Muscle</a></li>
+                    </ul>
+                </li>
+                <a href="bmi.html">
+                    <li>BMI Calculator</li>
+                </a>
+                <a href="index.html#contact-sec">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <!-- HTML code for the search bar and result container -->
+    <div class="search-container">
+        <input type="text" id="exercise-search" placeholder="Search for an exercise..." />
+        <button id="search-btn" type="submit">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+    <div id="exercise-container"></div>
+    <div class="pagination">
+        <button id="prevBtn">&lt;</button>
+        <button id="nextBtn">&gt;</button>
+    </div>
+    <footer>
+        <h4>&copy; <span>FITVERSE</span> - all Rights reserved</h4>
+    </footer>
+    <br /><br /><br /><br /><br />
+</body>
+<script src="../js/bodyPart.js"></script>
+
+</html>
